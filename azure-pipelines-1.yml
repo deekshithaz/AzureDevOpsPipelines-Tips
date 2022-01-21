@@ -10,12 +10,12 @@ variables:
   storageAccount: terraformtfstateskipq
   container: tfstate
   tfstateFile: terraform.tfstate
-  anyTfChanges: false
+  anyTfChanges: true
 
 steps:
 
 - task: TerraformInstaller@0
-  displayName: install Terraform v0.12.28
+  displayName: install Terraform v0.
   inputs:
     terraformVersion: '0.12.28'
 
